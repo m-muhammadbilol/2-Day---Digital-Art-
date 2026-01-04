@@ -390,6 +390,9 @@
   .pb-\[39px\] {
     padding-bottom: 39px;
   }
+  .pb-\[92px\] {
+    padding-bottom: 92px;
+  }
   .pl-\[10px\] {
     padding-left: 10px;
   }
@@ -543,6 +546,11 @@
       display: none;
     }
   }
+  .sm\:flex-row {
+    @media (width >= 40rem) {
+      flex-direction: row;
+    }
+  }
   .sm\:items-center {
     @media (width >= 40rem) {
       align-items: center;
@@ -598,9 +606,34 @@
       flex-direction: row;
     }
   }
+  .md\:items-center {
+    @media (width >= 48rem) {
+      align-items: center;
+    }
+  }
+  .md\:items-end {
+    @media (width >= 48rem) {
+      align-items: flex-end;
+    }
+  }
   .md\:justify-between {
     @media (width >= 48rem) {
       justify-content: space-between;
+    }
+  }
+  .md\:gap-\[50p\] {
+    @media (width >= 48rem) {
+      gap: 50p;
+    }
+  }
+  .md\:gap-\[50px\] {
+    @media (width >= 48rem) {
+      gap: 50px;
+    }
+  }
+  .lg\:flex {
+    @media (width >= 64rem) {
+      display: flex;
     }
   }
   .lg\:max-w-\[1290px\] {
@@ -621,6 +654,11 @@
   .lg\:justify-between {
     @media (width >= 64rem) {
       justify-content: space-between;
+    }
+  }
+  .lg\:gap-\[50px\] {
+    @media (width >= 64rem) {
+      gap: 50px;
     }
   }
   .xl\:relative {
@@ -686,6 +724,11 @@
   .xl\:max-w-\[1290px\] {
     @media (width >= 80rem) {
       max-width: 1290px;
+    }
+  }
+  .xl\:flex-row {
+    @media (width >= 80rem) {
+      flex-direction: row;
     }
   }
 }
