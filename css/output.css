@@ -171,6 +171,9 @@
   .absolute {
     position: absolute;
   }
+  .relative {
+    position: relative;
+  }
   .top-\[20px\] {
     top: 20px;
   }
@@ -508,6 +511,21 @@
       justify-content: center;
     }
   }
+  .sm\:pb-\[20px\] {
+    @media (width >= 40rem) {
+      padding-bottom: 20px;
+    }
+  }
+  .sm\:text-\[48px\] {
+    @media (width >= 40rem) {
+      font-size: 48px;
+    }
+  }
+  .sm\:text-\[64px\] {
+    @media (width >= 40rem) {
+      font-size: 64px;
+    }
+  }
   .md\:m-0 {
     @media (width >= 48rem) {
       margin: calc(var(--spacing) * 0);
@@ -523,9 +541,84 @@
       margin-left: auto;
     }
   }
+  .md\:flex {
+    @media (width >= 48rem) {
+      display: flex;
+    }
+  }
   .md\:max-w-\[900px\] {
     @media (width >= 48rem) {
       max-width: 900px;
+    }
+  }
+  .md\:flex-row {
+    @media (width >= 48rem) {
+      flex-direction: row;
+    }
+  }
+  .md\:justify-between {
+    @media (width >= 48rem) {
+      justify-content: space-between;
+    }
+  }
+  .lg\:max-w-\[1290px\] {
+    @media (width >= 64rem) {
+      max-width: 1290px;
+    }
+  }
+  .lg\:flex-row {
+    @media (width >= 64rem) {
+      flex-direction: row;
+    }
+  }
+  .lg\:items-start {
+    @media (width >= 64rem) {
+      align-items: flex-start;
+    }
+  }
+  .lg\:justify-between {
+    @media (width >= 64rem) {
+      justify-content: space-between;
+    }
+  }
+  .xl\:relative {
+    @media (width >= 80rem) {
+      position: relative;
+    }
+  }
+  .xl\:top-\[100px\] {
+    @media (width >= 80rem) {
+      top: 100px;
+    }
+  }
+  .xl\:top-\[500px\] {
+    @media (width >= 80rem) {
+      top: 500px;
+    }
+  }
+  .xl\:right-\[50px\] {
+    @media (width >= 80rem) {
+      right: 50px;
+    }
+  }
+  .xl\:bottom-\[100px\] {
+    @media (width >= 80rem) {
+      bottom: 100px;
+    }
+  }
+  .xl\:left-\[50px\] {
+    @media (width >= 80rem) {
+      left: 50px;
+    }
+  }
+  .xl\:left-\[150px\] {
+    @media (width >= 80rem) {
+      left: 150px;
+    }
+  }
+  .xl\:left-\[250px\] {
+    @media (width >= 80rem) {
+      left: 250px;
     }
   }
   .xl\:m-0 {
@@ -541,6 +634,11 @@
   .xl\:ml-auto {
     @media (width >= 80rem) {
       margin-left: auto;
+    }
+  }
+  .xl\:w-\[304px\] {
+    @media (width >= 80rem) {
+      width: 304px;
     }
   }
   .xl\:max-w-\[1290px\] {
