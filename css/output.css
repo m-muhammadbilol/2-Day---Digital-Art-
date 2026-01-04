@@ -180,8 +180,23 @@
   .top-\[50px\] {
     top: 50px;
   }
+  .top-\[100px\] {
+    top: 100px;
+  }
   .top-\[150px\] {
     top: 150px;
+  }
+  .bottom-\[50px\] {
+    bottom: 50px;
+  }
+  .bottom-\[60px\] {
+    bottom: 60px;
+  }
+  .bottom-\[70px\] {
+    bottom: 70px;
+  }
+  .bottom-\[100px\] {
+    bottom: 100px;
   }
   .m-0 {
     margin: calc(var(--spacing) * 0);
@@ -241,6 +256,15 @@
   }
   .justify-center {
     justify-content: center;
+  }
+  .justify-start {
+    justify-content: flex-start;
+  }
+  .gap-\[10px\] {
+    gap: 10px;
+  }
+  .gap-\[20px\] {
+    gap: 20px;
   }
   .gap-\[30px\] {
     gap: 30px;
@@ -306,6 +330,9 @@
   .bg-\[\#D6EF0E\] {
     background-color: #D6EF0E;
   }
+  .bg-\[\.\/img\/gamer\.svg\] {
+    background-color: ./img/gamer.svg;
+  }
   .bg-emerald-600 {
     background-color: var(--color-emerald-600);
   }
@@ -321,8 +348,20 @@
   .bg-transparent {
     background-color: transparent;
   }
+  .bg-\[url\(\.\/img\/gamer\.svg\)\] {
+    background-image: url(./img/gamer.svg);
+  }
+  .bg-\[url\(\/img\/gamer\.svg\)\] {
+    background-image: url(/img/gamer.svg);
+  }
   .p-0 {
     padding: calc(var(--spacing) * 0);
+  }
+  .p-\[5px\] {
+    padding: 5px;
+  }
+  .p-\[10-px\] {
+    padding: 10-px;
   }
   .p-\[10px\] {
     padding: 10px;
@@ -332,6 +371,9 @@
   }
   .p-\[20px\] {
     padding: 20px;
+  }
+  .pt-\[10px\] {
+    padding-top: 10px;
   }
   .pt-\[14\.5px\] {
     padding-top: 14.5px;
@@ -576,6 +618,16 @@
       justify-content: center;
     }
   }
+  .sm\:gap-\[10px\] {
+    @media (width >= 40rem) {
+      gap: 10px;
+    }
+  }
+  .sm\:gap-\[20px\] {
+    @media (width >= 40rem) {
+      gap: 20px;
+    }
+  }
   .sm\:pb-\[20px\] {
     @media (width >= 40rem) {
       padding-bottom: 20px;
@@ -648,6 +700,16 @@
       justify-content: space-between;
     }
   }
+  .md\:gap-\[10px\] {
+    @media (width >= 48rem) {
+      gap: 10px;
+    }
+  }
+  .md\:gap-\[20px\] {
+    @media (width >= 48rem) {
+      gap: 20px;
+    }
+  }
   .md\:gap-\[50p\] {
     @media (width >= 48rem) {
       gap: 50p;
@@ -693,6 +755,21 @@
       position: relative;
     }
   }
+  .xl\:top-\[20px\] {
+    @media (width >= 80rem) {
+      top: 20px;
+    }
+  }
+  .xl\:top-\[50px\] {
+    @media (width >= 80rem) {
+      top: 50px;
+    }
+  }
+  .xl\:top-\[70px\] {
+    @media (width >= 80rem) {
+      top: 70px;
+    }
+  }
   .xl\:top-\[100px\] {
     @media (width >= 80rem) {
       top: 100px;
@@ -711,6 +788,11 @@
   .xl\:right-\[100px\] {
     @media (width >= 80rem) {
       right: 100px;
+    }
+  }
+  .xl\:bottom-\[20px\] {
+    @media (width >= 80rem) {
+      bottom: 20px;
     }
   }
   .xl\:bottom-\[100px\] {
@@ -776,6 +858,21 @@
   .xl\:justify-between {
     @media (width >= 80rem) {
       justify-content: space-between;
+    }
+  }
+  .xl\:gap-\[1px\] {
+    @media (width >= 80rem) {
+      gap: 1px;
+    }
+  }
+  .xl\:gap-\[20px\] {
+    @media (width >= 80rem) {
+      gap: 20px;
+    }
+  }
+  .xl\:p-0 {
+    @media (width >= 80rem) {
+      padding: calc(var(--spacing) * 0);
     }
   }
   .xl\:pb-\[90px\] {
