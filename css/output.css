@@ -177,6 +177,12 @@
   .top-\[20px\] {
     top: 20px;
   }
+  .top-\[50px\] {
+    top: 50px;
+  }
+  .top-\[150px\] {
+    top: 150px;
+  }
   .m-0 {
     margin: calc(var(--spacing) * 0);
   }
@@ -336,6 +342,9 @@
   .pt-\[16px\] {
     padding-top: 16px;
   }
+  .pt-\[20px\] {
+    padding-top: 20px;
+  }
   .pt-\[24px\] {
     padding-top: 24px;
   }
@@ -390,6 +399,9 @@
   .pb-\[39px\] {
     padding-bottom: 39px;
   }
+  .pb-\[90px\] {
+    padding-bottom: 90px;
+  }
   .pb-\[92px\] {
     padding-bottom: 92px;
   }
@@ -431,6 +443,9 @@
   }
   .text-\[42px\] {
     font-size: 42px;
+  }
+  .text-\[48px\] {
+    font-size: 48px;
   }
   .font-bold {
     --tw-font-weight: var(--font-weight-bold);
@@ -616,6 +631,18 @@
       align-items: flex-end;
     }
   }
+  .md\:items-start {
+    @media (width >= 48rem) {
+      align-items: flex-start;
+    }
+  }
+  .md\:md\:items-start {
+    @media (width >= 48rem) {
+      @media (width >= 48rem) {
+        align-items: flex-start;
+      }
+    }
+  }
   .md\:justify-between {
     @media (width >= 48rem) {
       justify-content: space-between;
@@ -681,6 +708,11 @@
       right: 50px;
     }
   }
+  .xl\:right-\[100px\] {
+    @media (width >= 80rem) {
+      right: 100px;
+    }
+  }
   .xl\:bottom-\[100px\] {
     @media (width >= 80rem) {
       bottom: 100px;
@@ -689,6 +721,11 @@
   .xl\:left-\[50px\] {
     @media (width >= 80rem) {
       left: 50px;
+    }
+  }
+  .xl\:left-\[100px\] {
+    @media (width >= 80rem) {
+      left: 100px;
     }
   }
   .xl\:left-\[150px\] {
@@ -729,6 +766,21 @@
   .xl\:flex-row {
     @media (width >= 80rem) {
       flex-direction: row;
+    }
+  }
+  .xl\:items-start {
+    @media (width >= 80rem) {
+      align-items: flex-start;
+    }
+  }
+  .xl\:justify-between {
+    @media (width >= 80rem) {
+      justify-content: space-between;
+    }
+  }
+  .xl\:pb-\[90px\] {
+    @media (width >= 80rem) {
+      padding-bottom: 90px;
     }
   }
 }
